@@ -208,7 +208,7 @@ touch README.md
 touch SECURITY.md
 # Add the Security section
 cat <<EOL > SECURITY.md
-# REPORT ALL SECURITY ISSUES [HERE](#)
+# REPORT ALL VULNERABILITY/SECURITY ISSUES [HERE](#)
 EOL
 
 # Ask for a custom commit message
