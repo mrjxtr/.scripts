@@ -38,6 +38,7 @@ cat <<EOL > .gitignore
 
 Thumbs.db
 
+bin/
 dist/
 vscode/
 __pycache__/
