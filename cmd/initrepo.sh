@@ -1,4 +1,8 @@
 #!/bin/bash
+# ==============================================
+# This script s to initialize a git repository
+# with most commonly included files in a repo.
+# ==============================================
 
 # Confirmation prompt with a default of 'yes'
 read -p "Initialize Git repository? Proceed? (Y/n): " confirm
@@ -36,9 +40,8 @@ cat <<EOL > .gitignore
 .DS_Store
 .env
 
-Thumbs.db
-
 bin/
+tmp/
 dist/
 vscode/
 __pycache__/

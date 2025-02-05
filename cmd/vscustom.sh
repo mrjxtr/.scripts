@@ -1,4 +1,8 @@
 #!/bin/bash
+# ========================================================= 
+# This script is to activate the Custom CSS and JS loader
+# VSCode extension after a vscode update
+# =========================================================
 
 echo -e "\nChanging vscode extensions permissions"
 

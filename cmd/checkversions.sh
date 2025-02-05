@@ -1,10 +1,13 @@
 #!/bin/bash
-
-echo -e "\nCHECKING DEV TOOLS/STACK VERSIONS\n\n"
+# ===================================================
+# This script is to check current installed versions
+# of my most commonly used dev tools and languages
+# ===================================================
 
 fastfetch --config examples/8
 
-echo -e "\n\n🐍 Python: v$(python --version | awk '{print $2}')"
+echo -e "\n\nCHECKING DEV TOOLS/STACK VERSIONS\n"
+echo -e "🐍 Python: v$(python --version | awk '{print $2}')"
 echo -e "🦫 Go: v$(go version | awk '{print $3}' | cut -c3-)"
 echo -e "📘 TypeScript: v$(tsc --version | awk '{print $2}')"
 echo -e "🦀 Rust: v$(rustc --version | awk '{print $2}')"
