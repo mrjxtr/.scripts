@@ -1,7 +1,6 @@
 #!/bin/bash
 
-
-echo -e "\nChecking available updates\n"
+echo -e "CHECKING AVAILABLE UPDATES\n"
 
 yay -Qqu | while read pkg; do
     repo=$(pacman -Si "$pkg" 2>/dev/null | awk -F ': ' '/^Repository/ {print $2}')
