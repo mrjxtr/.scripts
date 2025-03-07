@@ -40,6 +40,7 @@ cat <<EOL > .gitignore
 .DS_Store
 .env
 
+.venv/
 bin/
 tmp/
 dist/
