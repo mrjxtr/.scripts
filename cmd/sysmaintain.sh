@@ -63,6 +63,15 @@ if confirm "Create Timeshift Backup?"; then
     fi
 fi
 
+# Update the mirrorlist
+if confirm "Update Mirrorlist?"; then
+    print_header "Updating Mirrorlist"
+    if ! reflector --verbose --latest 10 --protocol http --sort rate --save /etc/pacman.d/mirrorlist; then
+        echo "Error: Mirrorlist update failed"
+        exit 1
+    fi
+fi
+
 if confirm "Update System? (Pacman)"; then
     print_header "Updating System"
     if ! pacman -Syu --noconfirm; then
